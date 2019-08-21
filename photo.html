@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>11vs11照片墙</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="icon" href="images/yumaoicon.png">
+</head>
+<body id="photopage">
+	<div id="content-wrapper">
+
+		<!-- Toggle on/off the grid used for this site simply by uncommenting this div -->
+		<!-- <div id="grid"><img src="images/grid.png" alt="" width="1090" height="1380"></div> -->
+		
+		<nav id="main_nav">
+			<section class="center">
+				<h1 class="logo">空灵WEB Developer</h1>
+				<ul class="link">
+					<li><a href="home.html">首页</a></li> <!-- class="active" -->
+					<!-- <li><a href="QandA.html">Q&A</a></li> -->
+					<li><a href="video.html">VIDEO</a></li>
+					<li><a href="photo.html">照片墙</a></li>
+					<li><a href="joinus.html">加入我们</a></li>
+				</ul>
+			</section>
+		</nav>
+		<div id="main-content-wrapper">
+			<div id="header">
+				<img src="images/logofont.png" alt="logofont">
+			</div> <!-- end #header -->
+			<div id="photo-main"><!-- 原来写的是main，导致为在home.html中为#main定义的规则作用到这里，导致奇怪的照片掉下去的效果 -->
+				<div id="main-rotate">
+					<div class="rotate" id="first">
+						<img src="images/rotate/Rlanzhou.png" alt="2015 兰州">
+						<p>2015年 甘肃&middot;兰州</p>
+					</div>
+					<div class="rotate" id="second">
+						<img src="images/rotate/Rguiyang.png" alt="2015 贵阳">
+						<p>2015年 贵州&middot;贵阳</p>
+					</div>
+					<div class="rotate" id="third">
+						<img src="images/rotate/Rfoshan.png" alt="2016 佛山">
+						<p>2016年 广东&middot;佛山</p>
+					</div>
+					<div class="rotate" id="fourth">
+						<img src="images/rotate/Rstrawberry.png" alt="摘草莓">
+						<p>生活篇 | 基地摘草莓</p>
+					</div>
+				</div>
+				<div id="snapshots">
+					<h2>Snapshots</h2>
+					<ul id="imageGallery">
+						<li><a href="images/photoGallery/foshan1.jpg" title="2016年 广东&middot;佛山"><img src="images/thumbnail/thumbnail_foshan1.png" alt="2016.7 佛山"></a></li>
+						<li><a href="images/photoGallery/zhongoucenter.jpg" title="2016年 广东&middot;佛山 中欧中心"><img src="images/thumbnail/thumbnail_foshan2.png" alt="中欧中心"></a></li>
+						<li><a href="images/photoGallery/strawberry.jpg" title="基地摘草莓"><img src="images/thumbnail/thumbnail_life1.png" alt="摘草莓"></a></li>
+						<li><a href="images/photoGallery/guiyang1.jpg" title="2015年 贵州&middot;贵阳"><img src="images/thumbnail/thumbnail_guiyang1.png" alt="2015.10 贵阳"></a></li>
+						<li><a href="images/photoGallery/lanzhou1.jpg" title="2015年 甘肃&middot;兰州"><img src="images/thumbnail/thumbnail_lanzhou1.png" alt="2015.7 兰州"></a></li>
+						<li><a href="images/photoGallery/award.jpg" title="奖杯"><img src="images/thumbnail/thumbnail_lanzhou2.png" alt="2015.7 兰州奖杯"></a></li>
+					</ul>
+					<div id="photo-placeholder">
+						<p id="description">请点击上面选择一个图片</p>
+						<img src="images/photoplaceholder.jpg" alt="NPU 11vs11照片墙" id="placeholderImage">
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<p id="footer-links">
+					<a href="home.html">首页</a>&nbsp;&nbsp;
+					<!-- <a href="QandA.html">Q&A</a>&nbsp;&nbsp; -->
+					<a href="video.html">VIDEO</a>&nbsp;&nbsp;
+					<a href="photo.html">照片墙</a>&nbsp;&nbsp;
+					<a href="joinus.html">加入我们</a>
+				</p>
+				<p>
+					西北工业大学足球机器人基地11VS11仿真组 &nbsp;Copyright &copy 2016
+				</p>
+				<p>Author：晨风睿思 &nbsp;All rights reserved.</p>
+			</div> <!-- end #footer -->
+		</div>
+	</div>
+	<script src="js/global.js"></script>
+</body>

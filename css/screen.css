@@ -1,0 +1,686 @@
+@charset "UTF-8";
+
+/*--------GENERAL STYLES---------------------------*/
+
+body {
+	background: #f1efe8 url(../images/bg-dark.jpg) repeat-x;
+
+	/* These properties specifically for Safari, which does support multiple 
+	backgrounds */
+	background: url(../img/bg-dark.jpg) repeat-x top center, url(../img/bg-light.jpg) repeat-x 239px left;
+	background-color: #f1efe8;
+
+	font-family: Verdana,Arial,'Microsoft YaHei',sans-serif;
+	/*color: #36332a;*/
+}
+
+#content-wrapper {
+	position: relative;
+	margin: 0 auto;
+	/*width: 1070px;*/
+}
+#main-content-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1070px;
+}
+
+#grid {
+	position: absolute;
+	top: -20px;
+	left: -10px;
+	width: 1090px;
+	z-index: 99999;
+}
+
+ul {
+	list-style: outside none none; /*待研究*/
+}
+a {
+	text-decoration: none;
+}
+
+
+#main_nav {
+	width: 100%;
+	height: 60px;
+	background-color: #222;
+	position: relative;
+	z-index: 9999;
+}
+#main_nav .center {
+	width: 1263px;
+	margin: 0 auto;
+}
+#main_nav .logo {
+	width: 240px;
+	height: 60px;
+	background: url(../images/catlogo1.png) no-repeat;
+	text-indent: -9999px;
+	float: left;
+}
+#main_nav .link {
+	width: 770px;
+	height: 60px;
+	/*background-color: red;*/
+	/*color: white;*/ /*为何无效?*/
+	font-size: 20px;
+	line-height: 60px;
+	float: right;
+	/*font-family: 'Microsoft YaHei';*/
+}
+#main_nav .link > li {
+	width: 120px;
+	height: 60px;
+	text-align: center;
+	float: left;	/*这条规则会使导航栏中的“首页”等由竖直转为水平——通过浮动来实现*/
+}
+#main_nav .link > li > a {
+	display: block;
+	color: #eee;
+}
+#main_nav .link a:hover,
+#main_nav .link .active {
+	color: #9370db;/*青紫色*/
+	background-color: #000;
+}
+
+#home #main-content-wrapper #header #hot {
+	position: absolute;
+	top: 100px;
+	right: 308px;
+	z-index: 999;
+}
+
+/*-------------#home-------------------------------------*/
+#main {
+	float: left;
+	margin: 20px 10px 40px 0;
+	width: 710px;
+}
+
+#carousel {
+	position: relative; 
+	width: 710px;
+	height: 320px;
+	overflow: hidden;
+	background: #fff;
+	}
+
+#carousel-photos a {
+	width: 710px; 
+	height: 320px; 
+	background: #1e1a0e url(../images/loading.gif) no-repeat center center; 
+	}
+	
+#carousel a#prev {
+	display: block;
+	position: absolute; 
+	width: 20px;
+	height: 35px;
+	top: 145px;
+	left: 13px;
+	z-index: 998;
+	text-indent: -9999px;
+	background: url(../images/arrow-prev.png) no-repeat 0 0;
+	}
+	
+#carousel a:hover#prev { 
+	background-position: 0 -36px;
+	}
+
+/* IE doesn't play well with this style, so it's disabled in ie.css*/
+#carousel a:active#prev { 
+	background-position: 1px -35px;
+	}
+
+#carousel #next {
+	position: absolute; 
+	width: 20px;
+	height: 35px;
+	top: 145px; 
+	right: 13px; 
+	z-index: 999; 
+	text-indent: -9999px;
+	background: url(../images/arrow-next.png) no-repeat 0 0;
+	}
+
+#carousel a:hover#next { 
+	background-position: 0 -36px;
+	}
+
+/* IE doesn't play well with this style, so it's disabled in ie.css*/
+#carousel a:active#next { 
+	background-position: 1px -35px;
+	}
+
+#abstract {
+	min-height: 290px;
+	background: #f1efe8 url(../images/abstract-bg.jpg) no-repeat left 20px;
+	background: url(../images/bg-colosseo-overlay.jpg) no-repeat left 21px, url(../images/bg-colosseo.jpg) repeat-y;
+	background-color: #f1efe8;
+}
+#abstract1 {
+	position: relative;
+	/*float: left;*/
+	/*margin: 25px 0 0 30px;*/
+	padding-left: 180px;
+}
+#abstract1 img {
+	position: absolute;
+	top: -36px;
+	left: -60px;
+}
+#abstract1 article {
+	padding: 30px 20px 20px 10px;
+}
+#abstract1 article h3 {
+	color: #af670a;
+	margin: 0 0 10px 10px;
+	font-size: 1.2em;
+	width: 145px;
+	background: url(../images/arrow-orange.png) no-repeat right center;
+}
+#abstract1 article p {
+	line-height: 25px;
+}
+
+#abstract2 article {
+	padding: 25px;
+}
+#abstract2 article h3 {
+	color: #af670a;
+	margin: 0 0 10px 10px;
+	font-size: 1.3em;
+	width: 95px;
+	background: url(../images/arrow-orange.png) no-repeat right center;
+}
+#abstract2 article ul {
+	line-height: 20px;
+	list-style: inside url(../images/item1.png);
+	/*vertical-align: top;*/	/*没用*/
+	/*vertical-align: -50%;*/	/*也没用*/
+}
+/*#abstract2 article ul li {
+	background: url(../images/item1.png) no-repeat left center;
+}*/
+/*#abstract2 article ul li {
+	vertical-align: top;
+}*//*没用*/
+
+#abstract2 {
+	position: relative;
+}
+#abstract2 img {
+	position: absolute;
+	top: -20px;
+	left: 460px;
+}
+
+
+#main-content-wrapper #video h3 {
+	color: #af670a;
+	font-size: 1.3em;
+	margin: 10px 0 7px 32px;
+	width: 55px;
+	background: url(../images/arrow-orange.png) no-repeat right center;
+}
+#main-content-wrapper #video h4 {
+	color: #458b00;
+	font-size: 1em;
+	margin-bottom: 13px;
+}
+#main-content-wrapper #video article {
+	width: 310px;
+	float: left;
+	margin: 10px 20px 0 20px;
+}
+#main-content-wrapper #video a {
+	/*float: left;*/
+}
+
+#main-content-wrapper #awards {
+	clear: left;	/*如果没有这条规则，则表格左边会和页面上的第二个视频的左边垂直对齐，Why?*/
+	padding: 10px;
+}
+#main-content-wrapper #awards article {
+	position: relative;
+}
+#main-content-wrapper #awards article img {
+	position: absolute;
+	top: -9px;
+	right: 79px;
+}
+#main-content-wrapper #awards table {
+	margin-left: 20px;
+	background-color: #eee;
+
+	border: 1px solid #ccc;
+	/*为什么下面的规则在chrome和Firefox里没有产生圆角？！*/
+	-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	/*-ms-border-radius: 6px;
+	-o-border-radius: 6px;*/
+	
+	-webkit-box-shadow: 3px 3px 6px #ccc;
+	-moz-box-shadow: 3px 3px 6px #ccc;
+	-ms-box-shadow: 3px 3px 6px #ccc;
+	-o-box-shadow: 3px 3px 6px #ccc;
+	box-shadow: 3px 3px 6px #ccc;
+
+	line-height: 1.5em;
+	caption-side: bottom;
+	border-collapse: collapse;
+
+	table-layout: fixed;
+	width: 660px;
+	text-align: center;
+}
+#main-content-wrapper #awards table #col2 {
+	width: 439px;
+}
+
+#main-content-wrapper #awards table th,td {
+	border: thin solid #ccc;
+	padding: 7px;
+}
+#main-content-wrapper #awards table th {
+	/*background-color: #af670a;*/
+	/*--------------CSS3 线性渐变------------------------------*/
+	background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+	
+	/*--------------CSS3 阴影------------------------------*/
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;   
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+	padding: 8px;
+	font-family: 'YouYuan'
+}
+/*下面这条规则何用？*/
+#main-content-wrapper #awards table th:first-child, #main-content-wrapper #awards table td:first-child{
+	border-left: none;
+}
+#main-content-wrapper #awards table th:first-child {
+	
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	/*-ms-border-radius: 6px 0 0 0;
+	-o-border-radius: 6px 0 0 0;*/
+	border-radius: 6px 0 0 0;
+}
+#main-content-wrapper #awards table th:last-child {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	/*-ms-border-radius: 0 6px 0 0;
+	-o-border-radius: 0 6px 0 0;*/
+	border-radius: 0 6px 0 0;
+}
+#main-content-wrapper #awards table tr:last-child td:first-child {
+	-webkit-border-radius: 0 0 0 6px;
+	-moz-border-radius: 0 0 0 6px;
+	-ms-border-radius: 0 0 0 6px;
+	-o-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+	/*color: red;*/
+}
+#main-content-wrapper #awards table tr:last-child td:last-child {
+	-webkit-border-radius: 0 0 6px 0;
+	-moz-border-radius: 0 0 6px 0;
+	-ms-border-radius: 0 0 6px 0;
+	-o-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
+}
+
+#main-content-wrapper #awards article h3 {
+	color: #af670a;
+	font-size: 1.2em;
+	margin: 20px 0 25px 20px;
+	width: 148px;
+	background: url(../images/arrow-orange.png) no-repeat right center;
+}
+#main-content-wrapper #awards table caption {
+	font-style: italic;
+	margin-top: 5px;
+}
+#main-content-wrapper #awards table tr:nth-child(odd) {
+	/*background-color: #fcba7a;*/
+	background-color: #ddd;
+}
+#main-content-wrapper #awards table tr:hover {
+	background-color: yellow;
+}
+
+/*---------------sidebar-------------------------------------------*/
+#sidebar {
+	float: left;
+	margin-top: 20px;
+	width: 350px;
+}
+#sidebar .motto {
+	position: relative;
+	height: 320px;
+	background: #c27e28 url(../images/sidebarmotto.png) no-repeat;
+}
+#sidebar .motto p {
+	position: absolute;
+	top: 38px;
+	left: 37px;
+	width: 280px;
+	height: 160px;
+	/*font-weight: bold;*/
+	/*font-family: 'Microsoft YaHei';*/
+	line-height: 21px;
+}
+#sidebar .motto p em {
+	text-indent: -.3em; /* for hanging punctuation on the quotation mark */
+	/*为何无效？*/
+}
+
+#sidebar #group {
+	margin-top: 20px;
+	padding: 12px 20px 0 20px;
+	background: url(../images/bg-noise.jpg) repeat-y;
+	line-height: 1.5em;
+	min-height: 162px;
+}
+#sidebar #group h3 {
+	color: #af670a;
+	font-size: 19px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#sidebar #group .anchor {
+	text-align: center;
+	/*width: 140px;*/
+	/*display: inline-block;*/
+}
+#sidebar #group .anchor li {
+	display: inline-block;
+	width: 145px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #ccc;
+	color: purple;
+	margin: 5px 2px;
+}
+#sidebar #group .anchor > li > a {
+	display: block;
+	/*float: left;*/
+	color: purple;
+}
+#sidebar #group .anchor > li > a:hover {
+	background-color: #458b00;
+	color: #fff;
+}
+
+#sidebar #photos {
+	min-height: 500px;
+	padding: 25px 0 0 27px;
+	background: url(../images/bg-sidebar.jpg) no-repeat;
+}
+#sidebar #photos h3 {
+	color: #af670a;
+	font-size: 18px;
+	margin-bottom: 17px;
+}
+#sidebar #photos a {
+	width: 122px
+	height: 121px;
+	float: left;
+	padding: 10px 5px 10px 15px;
+}
+#sidebar #photos img {
+	/*padding: 15px 15px 15px 15px;*/	/*如果不加这条规则，则下面规则所说的背景图片就不显示，Why?*/
+	padding: 15px;
+	background: url(../images/thumb-frame.png) no-repeat;
+}
+
+/*#sidebar #joinus {
+	background-color: red;
+	color: green;
+}*/
+#sidebar #joinus article {
+	position: relative;
+}
+#sidebar #joinus article .chat_icon {
+	position: absolute;
+	top: -29px;
+	right: 20px;
+}
+#sidebar #joinus article h3 {
+	color: #af670a;
+	font-size: 18px;
+	margin-bottom: 9px;
+	margin-left: 20px;
+}
+#sidebar #joinus article h4 {
+	margin-left: 20px;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#sidebar #joinus img {
+	margin: 0px 30px;
+	padding: 20px;
+	background-color: #ddd;
+}
+#sidebar #joinus article p {
+	margin: 20px 0 5px 28px;
+	color: #555;
+	line-height: 1.4em;
+}
+
+/*------------(通用)footer-------------------------------------*/
+#footer {
+	clear: both;
+	color: #8a867c;
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 16px;
+	line-height: 1.4em;
+	/*border-top: solid 1px #8a867c;*/
+}
+#footer a {
+	color: #8a867c;
+}
+#footer a:hover {
+	color: purple;
+}
+
+/*------------#videopage-------------------------------*/
+#videopage #main-content-wrapper {
+	width: 1070px;
+	margin: 5px auto;
+	/*text-align: center;*/
+	/*padding: 20px 0;*/
+	/*background: red url(../images/bg-darknoise.jpg) repeat;*//*#1e1b10*/
+	/*border: 5px red solid;*/
+}
+#videopage #main-content-wrapper #main {
+	/*border: 3px red solid;*/
+	text-align: center;
+	width: 100%;
+	/*background: #1e1b10 url(../images/bg-darknoise.jpg) repeat-x;*/
+	/*background: #eee url(../images/bg-darknoise.jpg) repeat;*/
+}
+
+#videopage #main-content-wrapper #main #video1 , #videopage #main-content-wrapper #main #video2 {
+	height: 410px;
+	padding: 28px 0 0 0;
+	position: relative;
+	background: #1e1b10 url(../images/bg-darknoise.jpg) repeat-x;
+	color: #fff;
+}
+#videopage #main-content-wrapper #main #video2 {
+	height: 420px;
+}
+#videopage #main-content-wrapper #main #video1 img.videoicon {
+	position: absolute;
+	top: 160px;
+	left: 56px;
+}
+#videopage #main-content-wrapper #main #video2 img.videoicon {
+	position: absolute;
+	top: 160px;
+	left: 56px;
+}
+#videopage #main-content-wrapper #main p {
+	line-height: 1.7em;
+}
+
+/*------------#photopage-------------------------------*/
+#photopage .rotate {
+	float: left;
+	width: 250px;
+	margin-top: 12px;
+	padding: 10px 0px 16px 10px;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 0px 3px 6px #ccc;
+	-moz-box-shadow: 0px 3px 6px #ccc;
+	-ms-box-shadow: 0px 3px 6px #ccc;
+	-o-box-shadow: 0px 3px 6px #ccc;
+	box-shadow: 0px 3px 6px #ccc;
+}
+/*#photopage #rotate #fourth {
+	-webkit-box-shadow: 0px 3px 6px #ccc;
+	-moz-box-shadow: 0px 3px 6px #ccc;
+	-ms-box-shadow: 0px 3px 6px #ccc;
+	-o-box-shadow: 0px 3px 6px #ccc;
+	box-shadow: 0px 3px 6px #ccc;
+}*/
+#photopage .rotate p {
+	margin-top: 8px;
+}
+#photopage #main-rotate #first {
+	-webkit-transform: rotate(7deg);
+	-moz-transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-o-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
+#photopage #main-rotate #second {
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+#photopage #main-rotate #third {
+	-webkit-transform: rotate(7deg);
+	-moz-transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-o-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
+#photopage #main-rotate #fourth {
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+
+#photopage #snapshots {
+	clear: both;
+	margin-top: 80px;	/*这条规则为何不起作用？因为这条规则不起作用，所以用下面的内边距来代替*/
+	padding-top: 30px;
+	margin-left: 30px;
+}
+#photopage #snapshots li {
+	display: inline;
+}
+#photopage #snapshots h2 {
+	color: #458b00;
+	margin: 0 0 15px 0;
+	font-size: 18px;
+}
+#photopage #snapshots li img {
+	border: 1px #ddd solid;
+	padding: 7px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 5px #ccc;
+	-moz-box-shadow: 3px 3px 5px #ccc;
+	-ms-box-shadow: 3px 3px 5px #ccc;
+	-o-box-shadow: 3px 3px 5px #ccc;
+	box-shadow: 3px 3px 5px #ccc;
+}
+#photopage #snapshots #photo-placeholder {
+	margin: 18px 0;
+}
+#photopage #snapshots #photo-placeholder img {
+	border: 1px #ddd solid;
+	padding: 7px;
+	background-color: #fff;
+	-webkit-box-shadow: 3px 3px 5px #ccc;
+	-moz-box-shadow: 3px 3px 5px #ccc;
+	-ms-box-shadow: 3px 3px 5px #ccc;
+	-o-box-shadow: 3px 3px 5px #ccc;
+	box-shadow: 3px 3px 5px #ccc;
+}
+#photopage #snapshots #photo-placeholder p {
+	margin-bottom: 10px;
+	color: #af670a;
+}
+
+/*-----------#joinus-------------------------------*/
+#joinus #main-content-wrapper {
+	width: 1070px;
+	margin: 0 auto;
+}
+#joinus #main-content-wrapper #notice {
+	margin-top: 8px;
+	/*padding-right: 200px;*/
+	position: relative;
+}
+#joinus #main-content-wrapper #notice .para {
+	position: absolute;
+	line-height: 1.5em;
+}
+#joinus #main-content-wrapper #notice #section1 {
+	width: 400px;
+	top: 40px;
+	right: 180px;
+}
+#joinus #main-content-wrapper #notice #section2 {
+	width: 580px;
+	top: 420px;
+	left: 370px;
+}
+#joinus #main-content-wrapper #notice #section3 {
+	width: 580px;
+	top: 600px;
+	left: 370px;
+}
+#joinus #main-content-wrapper #notice h3 {
+	font-size: 17px;
+	color: #458b00;
+}
+#joinus #main-content-wrapper #notice a {
+	color: purple;
+	font-weight: bold;
+}
+#joinus #main-content-wrapper #notice a:hover {
+	color: #458b00;
+}
+#joinus #main-content-wrapper #notice article img {
+	position: absolute;
+	top: 135px;
+	right: -10px;
+}
+#joinus #main-content-wrapper #notice article h2 {
+	font-size: 24px;
+	color: #af670a;
+	margin-bottom: 15px;
+	font-family: 'YouYuan';
+}
